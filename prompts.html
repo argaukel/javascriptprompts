@@ -10,13 +10,26 @@
 
 <body>
     <script type="text/javascript">
-        alert("sushi!");
 
-        var sushiYes = confirm("Do you like sushi?");
-        var sushiWhat = prompt("What sushi do you like?")
 
-        alert(sushiYes);
-        alert(sushiWhat);
+        var steakYes = confirm("Do you eat steak?");
+
+
+        if (steakYes) {
+            document.write("here's a steak sandwich")
+        } else {
+            document.write("here's a tofu stir fry")
+        }
+
+        var birth = prompt("what year were you born?")
+
+        if (birth > 1998) {
+            alert("no sake for you!")
+        } else if (birth === 1998) {
+            alert(".....ok")
+        } else if (birth < 1998) {
+            alert("let's get wild")
+        }
     </script>
 </body>
 
