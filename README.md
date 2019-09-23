@@ -1,0 +1,2 @@
+# javascriptprompts
+prompts in javaScript
