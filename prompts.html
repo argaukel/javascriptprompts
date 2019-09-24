@@ -12,23 +12,15 @@
     <script type="text/javascript">
 
 
-        var steakYes = confirm("Do you eat steak?");
+        var bands = ["canter", "goo goo dolls", "b-52s",]
 
-
-        if (steakYes) {
-            document.write("here's a steak sandwich")
+        var bandFave = prompt("what's your favorite band?")
+        var bandFaveLower = bandFave.toLowerCase();
+        console.log(bandFaveLower);
+        if (bands.indexOf(bandFaveLower) > -1) {
+            alert("Cool, let's go")
         } else {
-            document.write("here's a tofu stir fry")
-        }
-
-        var birth = prompt("what year were you born?")
-
-        if (birth > 1998) {
-            alert("no sake for you!")
-        } else if (birth === 1998) {
-            alert(".....ok")
-        } else if (birth < 1998) {
-            alert("let's get wild")
+            alert("yeah, you're on your own")
         }
     </script>
 </body>
