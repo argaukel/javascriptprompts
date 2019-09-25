@@ -22,6 +22,14 @@
         } else {
             alert("yeah, you're on your own")
         }
+
+        var numbers = [0, 1, 2, 3, 5, 5, 6, 7, 8, 9, 5, 6, 4, 2, 3]
+        var firstFourIndex = numbers.indexOf(4)
+        var secondFourIndex = numbers.indexOf(4, firstFourIndex + 1);
+        alert(firstFourIndex + "   " + secondFourIndex)
+        console.log(numbers);
+        console.log(firstFourIndex);
+        console.log(secondFourIndex);
     </script>
 </body>
 
