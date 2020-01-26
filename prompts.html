@@ -5,31 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Data Types, User Input, Conditional Logic</title>
 </head>
 
 <body>
     <script type="text/javascript">
 
+        var userName = prompt("what's your name?");
+        var confirmCats = confirm("Do you like cats?");
 
-        var bands = ["canter", "goo goo dolls", "b-52s",]
+        var petName = "Meeses";
+        var petType = "tuxedo cat";
+        var petAge = 4;
+        var petIsCat = true;
 
-        var bandFave = prompt("what's your favorite band?")
-        var bandFaveLower = bandFave.toLowerCase();
-        console.log(bandFaveLower);
-        if (bands.indexOf(bandFaveLower) > -1) {
-            alert("Cool, let's go")
-        } else {
-            alert("yeah, you're on your own")
+        if (confirmCats) {
+            alert(petName + " " + petType + " " + petAge);
         }
 
-        var numbers = [0, 1, 2, 3, 5, 5, 6, 7, 8, 9, 5, 6, 4, 2, 3]
-        var firstFourIndex = numbers.indexOf(4)
-        var secondFourIndex = numbers.indexOf(4, firstFourIndex + 1);
-        alert(firstFourIndex + "   " + secondFourIndex)
-        console.log(numbers);
-        console.log(firstFourIndex);
-        console.log(secondFourIndex);
+        else {
+            alert("you don't get my cat's information");
+        }
+
+        if (petIsCat) {
+            alert("My pet is a cat");
+        }
+        else {
+            alert("my pet is not a cat");
+        }
+
+        if (petAge === 5) {
+            alert("my pet is 5 years old");
+        }
+        else if (petAge < 5) {
+            alert("my pet is less than 5 years old");
+        }
+        else {
+            alert("my pet is more than 5 years old");
+        }
+
+        document.write("Welcome to our page " + userName);
+
+        var catAge = prompt("How old is your cat?");
+
+        alert(parseInt(catAge) + 2);
+
+
     </script>
 </body>
 
