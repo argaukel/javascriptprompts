@@ -11,44 +11,17 @@
 <body>
     <script type="text/javascript">
 
-        var userName = prompt("what's your name?");
-        var confirmCats = confirm("Do you like cats?");
+        let numberOfSteps = (num, steps = 0) => {
+            for (; num; ++steps)
+                if (num % 2)
+                    --num;
+                else
+                    num >>= 1;
+            return steps;
+        };
 
-        var petName = "Meeses";
-        var petType = "tuxedo cat";
-        var petAge = 4;
-        var petIsCat = true;
-
-        if (confirmCats) {
-            alert(petName + " " + petType + " " + petAge);
-        }
-
-        else {
-            alert("you don't get my cat's information");
-        }
-
-        if (petIsCat) {
-            alert("My pet is a cat");
-        }
-        else {
-            alert("my pet is not a cat");
-        }
-
-        if (petAge === 5) {
-            alert("my pet is 5 years old");
-        }
-        else if (petAge < 5) {
-            alert("my pet is less than 5 years old");
-        }
-        else {
-            alert("my pet is more than 5 years old");
-        }
-
-        document.write("Welcome to our page " + userName);
-
-        var catAge = prompt("How old is your cat?");
-
-        alert(parseInt(catAge) + 2);
+        ;
+        console.log(numberOfSteps(10))
 
 
     </script>
